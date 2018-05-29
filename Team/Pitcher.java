@@ -29,7 +29,7 @@ import java.util.*;
 //******************************************************************************
 public class Pitcher extends Player{
     
-    private String role;  // instance variable 
+    private String role;   // instance variable 
 
     //consructor
     public Pitcher(String name, String address, String phone, 
@@ -67,7 +67,7 @@ public class Pitcher extends Player{
     }  // end method toString
     
     //overide abstract method update in Player
-    // @Override
+    //@Override
     public String update()
     {
         super.num_years++;      // increment years in player(s) record
