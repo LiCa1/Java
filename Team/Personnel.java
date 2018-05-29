@@ -1,15 +1,15 @@
 //******************************************************************************
 // Program:      - Personnel.java
 //                 There 6 Java programs(classes) that work together to set up an 
-//				   organization of players for a professional baseball francise.
+//		   organization of players for a professional baseball francise.
 //                 Team.java         - contains main(), creates & updates personel, 
 //                 Personnel.java,   - Sets up objects and populates players data,
-//  			   Player.java,      - provides variables and methods for types
+//  	           Player.java,      - provides variables and methods for types
 //                                     of players which can be any of the 3 bellow.
 //                 Pitcher.java      - inherits from the Player class,  
-//				   Regular.java      - inherits from the Player class,  
-//				   MinorLeaguer.java - inherits from the Player class.  
-//
+//		   Regular.java      - inherits from the Player class,  
+//		   MinorLeaguer.java - inherits from the Player class.  
+//           
 // Author:       - Lisa Caron
 // Course:       - C490 Java
 // Assignment:   - Program 4
@@ -29,7 +29,7 @@ import java.util.*;
     
     Player [] playerList;
     // Sets up the Personnel members that are Players on the Team
-	//  (3 each of 3 different types.)
+    //  (3 each of 3 different types.)
     public Personnel ()
     {
         playerList = new Player[9]; // initialize the array of objects
@@ -37,8 +37,8 @@ import java.util.*;
         //create 9 objects and put each Players - name, address, phone, bats, 
         //                                        throws, and years in its array
         //       3 will be MinorLeaguer with an additional "affiliate" attribute.
-        //       3 will be Regular		with an additional "position"  attribute.
-        //       3 will be Pitcher		with an additional "role"	   attribute.    
+        //       3 will be Regular	with an additional "position"  attribute.
+        //       3 will be Pitcher	with an additional "role"      attribute.    
 
         playerList [0] = new MinorLeaguer ("Alan Alexan", "123 Main Line Ave",
                                             "555-0469", "L","L", 1, "South Bend");
@@ -72,17 +72,17 @@ import java.util.*;
             System.out.println(playerList1);// display this players info
             result = playerList1.update();  // polymorphic update Player
             System.out.println ("------------------------------------");
-			System.out.println ("-- "+playerList1.name+" has been updatted --");
+	    System.out.println ("-- "+playerList1.name+" has been updatted --");
             System.out.println ("------------------------------------");
             System.out.println (result); // display this result of update
             System.out.println ("------------------------------------");
         }
-		System.out.println     ("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-");
+	System.out.println     ("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-");
         System.out.println     ("------------------------------------");
         System.out.println     ("      Team Has Been Updated:        ");
         System.out.println     ("------------------------------------");
-		System.out.println     ("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-");
-		System.out.println     ("------------------------------------");
+	System.out.println     ("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-");
+	System.out.println     ("------------------------------------");
         
          // display all results together after update 1 by 1
         for (Player playerList1 : playerList) {

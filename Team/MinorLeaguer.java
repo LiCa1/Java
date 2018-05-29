@@ -1,14 +1,14 @@
 //******************************************************************************
 // Program:      - MinorLeaguer.java
 //                 There 6 Java programs(classes) that work together to set up an 
-//				   organization of players for a professional baseball francise.
+//		   organization of players for a professional baseball francise.
 //                 Team.java         - contains main(), creates & updates personel, 
 //                 Personnel.java,   - Sets up objects and populates players data,
-//  			   Player.java,      - provides variables and methods for types
+//  	           Player.java,      - provides variables and methods for types
 //                                     of players which can be any of the 3 bellow.
 //                 Pitcher.java      - inherits from the Player class,  
-//				   Regular.java      - inherits from the Player class,  
-//				   MinorLeaguer.java - inherits from the Player class.  
+//		   Regular.java      - inherits from the Player class,  
+//		   MinorLeaguer.java - inherits from the Player class.  
 //           
 // Author:       - Lisa Caron
 // Course:       - C490 Java
@@ -79,15 +79,15 @@ public class MinorLeaguer extends Player {
         System.out.print   ("- Enter 'y' if yes: \n-- and any other key for no: ");
         
         Scanner input = new Scanner(System.in);
-        String result;          // instance variable to hold contents of string.
+        String result;              // instance variable to hold contents of string.
 	    result = input.next();  // read in user-entered string
 
-        if(!result.equals("y")){// if user does not want to edit just return.
+        if(!result.equals("y")){    // if user does not want to edit just return.
             System.out.print("- You entered other than 'y' for yes."+
                             "\n-- Only years will be updated. \n");
             return toString();
         }
-		else{                   // else read in change and set new affiliate.            
+		else{               // else read in change and set new affiliate.            
             System.out.print("- Enter new team: ");
 			result = input.next();
 			setAffiliate(result);
@@ -104,6 +104,5 @@ public class MinorLeaguer extends Player {
         return toString();      // return changed affiliate
     } // end method update
     
-    
-    
+     
 } // end MinorLeager class
