@@ -1,15 +1,15 @@
 //******************************************************************************
 // Program:      - Regular.java
 //                 There 6 Java programs(classes) that work together to set up an 
-//				   organization of players for a professional baseball francise.
+//		   organization of players for a professional baseball francise.
 //                 Team.java         - contains main(), creates & updates personel, 
 //                 Personnel.java,   - Sets up objects and populates players data,
-//  			   Player.java,      - provides variables and methods for types
+//  	           Player.java,      - provides variables and methods for types
 //                                     of players which can be any of the 3 bellow.
 //                 Pitcher.java      - inherits from the Player class,  
-//				   Regular.java      - inherits from the Player class,  
-//				   MinorLeaguer.java - inherits from the Player class.  
-// 
+//		   Regular.java      - inherits from the Player class,  
+//		   MinorLeaguer.java - inherits from the Player class.  
+//           
 // Author:       - Lisa Caron
 // Course:       - C490 Java
 // Assignment:   - Program 4
@@ -19,7 +19,7 @@
 import java.util.*;
 //******************************************************************************
 // Regular class -  inherits from the Player class 
-//					and keeps track of the name of the player’s Regular position.
+//		    and keeps track of the name of the player’s Regular position.
 // Inherited variables from Player - name, address, phone, bats,throwS, num_years
 // Variables:   - String position 
 // Constructor: - 1 uses all inherited variables and adds Regular position.
@@ -51,7 +51,7 @@ public class Regular extends Player{
         return position;
     }
     
-	// method toString() - display for Regular class
+    // method toString() - display for Regular class
     // Strings all player info together and returns results
     // as a string for MinorLeaguer object
     //@Override
